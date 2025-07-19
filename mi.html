@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+
+  <style>
+    ul>li{
+        list-style: none;
+    }
+
+    li>ul{
+        display:none;
+    }
+
+    li:hover>ul{
+        display: block;
+    }
+
+    body{
+        margin: 0;
+    }
+
+    div.firstpage>div.header{
+        position: relative;
+    }
+
+    div.firstpage>div.header>div.content{
+        width:1226px;
+    }
+
+    div.firstpage>div.header>div.content>ul>li{
+        display: inline-block;
+        padding: 5px 10px;
+    }
+
+    div.firstpage>div.header>div.content>ul>li:hover{
+        color: orange;
+    }
+  </style>
+</head>
+<body>
+    <div class="firstpage">
+        <div class="header">
+            <div class="content">
+                <ul>
+                    <li>Xiaomi手机
+                        <ul>
+                            <li>Xiaomi手机1</li>
+                            <li>Xiaomi手机2</li>
+                            <li>Xiaomi手机3</li>
+                            <li>Xiaomi手机4</li>
+                            <li>Xiaomi手机5</li>
+                            <li>Xiaomi手机6</li>
+                        </ul>
+                    </li>
+                    <li>REDMI手机</li>
+                    <li>电视</li>
+                    <li>笔记本</li>
+                    <li>平板</li>
+                    <li>家电</li>
+                    <li>路由器</li>
+                    <li>服务中心</li>
+                    <li>社区</li>
+                </ul>
+                <form action=""></form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
