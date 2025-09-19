@@ -1,0 +1,175 @@
+<script type="" id="ch0103/01">
+    var a = +prompt("")
+    var b = +prompt("")
+    var c = a + b
+    console.log(c)
+</script>
+
+<script type="" id="ch0103/02">
+    var a = +prompt("")
+    var b = +prompt("")
+    var c = +prompt("")
+    var d = (a + b) * c
+    console.log(d)
+</script>
+
+<script type="" id="ch0103/03">
+    var a = +prompt("")
+    var b = +prompt("")
+    var c = +prompt("")
+    var sum = a + b
+    var d = (sum - sum % c) / c
+    console.log(d)
+</script>
+
+<script type="" id="ch0103/04">
+    var a = +prompt("")
+    var b = +prompt("")
+    var yu = a % b 
+    var shang = (a - yu) / b
+    console.log(shang + " " + yu)
+</script>
+
+<script type="" id="ch0103/05">
+    var a = +prompt("")
+    var b = +prompt("")
+    var c = a / b
+    console.log(c)
+</script>
+
+<script type="" id="ch0103/06">
+    var b = +prompt("")
+    var a = +prompt("")
+    var c = a / b
+    console.log((c * 100).toFixed(3) + "%")
+</script>
+
+<script type="" id="ch0103/07">
+    var x = +prompt("")
+    var a = +prompt("")
+    var b = +prompt("")
+    var c = +prompt("")
+    var d = +prompt("")
+    var result = a * x ** 3 + b * x ** 2 + c * x + d
+    console.log(result.toFixed(7))
+</script>
+
+<script type="" id="ch0103/08">
+    var F = +prompt("")
+    var C = 5 * (F - 32) / 9
+    console.log(C.toFixed(5))
+</script>
+
+<script type="" id="ch0103/09">
+    var pi = 3.14159
+    var r = +prompt("")
+    var d = 2 * r
+    var long = 2 * pi * r
+    var S = pi * r ** 2
+    console.log(d.toFixed(4) + " " + long.toFixed(4) + " " + S.toFixed(4))
+</script>
+
+<script type="" id="ch0103/10">
+    var r1 = +prompt("")
+    var r2 = +prompt("")
+    var R = 1 / ((1 / r1) + (1 / r2))
+    console.log(R.toFixed(2))
+</script>
+
+<script type="" id="ch0103/11">
+    var a = +prompt("")
+    var b = +prompt("")
+    console.log(a % b)
+</script>
+
+<script type="" id="ch0103/12">
+    var pi = 3.14
+    var r = +prompt("")
+    var V = 4 / 3 * pi * r ** 3
+    console.log(V.toFixed(2))
+</script>
+
+<script type="" id="ch0103/13">
+    var before = +prompt("")
+    var result = ""
+    result += before % 10
+    before -= before % 10
+    before /= 10
+    result += before % 10
+    before -= before % 10
+    before /= 10
+    result += before % 10
+    before -= before % 10
+    before /= 10
+    console.log(result)
+</script>
+
+<script type="" id="ch0103/14">
+    var pi = 3.14159
+    var least = 20 * 1000
+    var h = +prompt("")
+    var r = +prompt("")
+    var V = pi * r ** 2 * h
+    var shang = least / V
+    if(shang % 1 == 0)
+        console.log(shang)
+    else
+        console.log(shang - shang % 1 + 1) 
+</script>
+
+<script type="" id="ch0103/15">
+    var n = +prompt("")
+    var x = +prompt("")
+    var y = +prompt("")
+    var result = y / x
+    var loss
+    if(result % 1 == 0)
+        loss = result
+    else
+        loss = result - result % 1 + 1
+    console.log(n - loss)
+</script>
+
+<script type="" id="ch0103/16">
+    var Xa = +prompt("")
+    var Ya = +prompt("")
+    var Xb = +prompt("")
+    var Yb = +prompt("")
+    var length = ((Xa - Xb) ** 2 + (Ya - Yb) ** 2) ** 0.5
+    console.log(length.toFixed(3))
+</script>
+
+<script type="" id="ch0103/17">
+    var x1 = +prompt("")
+    var y1 = +prompt("")
+    var x2 = +prompt("")
+    var y2 = +prompt("")
+    var x3 = +prompt("")
+    var y3 = +prompt("")
+    var a = ((x1 - x2) ** 2 + (y1 - y2) ** 2) ** 0.5
+    var b = ((x2 - x3) ** 2 + (y2 - y3) ** 2) ** 0.5
+    var c = ((x1 - x3) ** 2 + (y1 - y3) ** 2) ** 0.5
+    var p = (a + b + c) / 2
+    var S = (p * (p - a) * (p - b) * (p - c)) ** 0.5
+    console.log(S.toFixed(2))
+</script>
+
+<script type="" id="ch0103/18">
+    var a1 = +prompt("")
+    var a2 = +prompt("")
+    var d = a2 - a1
+    var n = +prompt("")
+    var an = a1 + (n - 1) * d
+    console.log(an)
+</script>
+
+<script type="" id="ch0103/19">
+    var a = +prompt("")
+    var b = +prompt("")
+    console.log(a * b)
+</script>
+
+<script type="" id="ch0103/20">
+    var n = +prompt("")
+    console.log(2 ** n)
+</script>
