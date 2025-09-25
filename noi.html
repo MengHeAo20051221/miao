@@ -709,7 +709,7 @@
         nowHeight /= 2 
         count += 1
     }
-    console.log(disSum,nowHeight)
+    console.log(disSum - nowHeight,nowHeight)
 </script>
 
 <script type="xxx" id="ch0105/21">
@@ -853,6 +853,7 @@
     var n = +prompt("")
     var wei = 0 
     var tmp = n 
+    var str = ""
     while (true) {
         wei += 1 
         tmp /= 10 
@@ -863,11 +864,12 @@
     for (var i = 0 ; i < wei ; i++) {
         var nowNum = ((n - n % (10 ** i)) / (10 ** i)) % 10
         if (i == wei -1) {
-            console.log(nowNum)
+            str += nowNum
         } else {
-            console.log(nowNum + " ")
+            str += nowNum + " "
         }
     }
+    console.log(str)
 </script>
 
 <script type="xxx" id="ch0105/29">
@@ -938,6 +940,7 @@
 <script type="xxx" id="ch0105/31">
     var N = +prompt("")
     var M = +prompt("") 
+    var str = "" 
     for (var i = 1 ; i <= N ; i++) {
         var light = 1
         for (var j = 1 ; j <= M ; j++) {
