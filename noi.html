@@ -1127,25 +1127,38 @@
     var width = +prompt("")
     var draw = prompt("") 
     var flag = +prompt("")
+    var result = ""
     if (flag == 0) {
         for (var i = 0 ; i < height ; i++) {
             if (i == 0 || i == height - 1) {
                 for(var j = 0 ; j < width ; j++) {
-                    console.log(draw)
+                    result += draw 
+                }
+                if (i == 0) {
+                    result += "\n"
                 }
             } else {
-                if (j == 0 || j == width -1) {
-                    console.log(draw)
+                for (var j = 0 ; j < width ; j++) {
+                    if (j == 0 || j == width -1) {
+                        result += draw
+                    } else {
+                        result += " "
+                    }
                 }
+                result += "\n"
             }
         }
     } else {
         for (var i = 0 ; i < height ; i++) {
             for (var j = 0 ; j < width ; j++) {
-                console.log(draw)
+                result += draw
+            }
+            if (i != height - 1) {
+                result += "\n"
             }
         }
     }
+    console.log(result)
 </script>
 
 <script type="xxx" id="ch0105/43">
